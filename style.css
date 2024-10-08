@@ -45,15 +45,20 @@ header {
     padding: 8px;
 }
 
+.menu-item:hover {
+    background-color: #f4f4f4;
+}
+
 #login-nav {
     margin-left: auto;
     align-items: center;
     gap: 15px;
 }
 
-#login {
-    border-left: 1px solid gray;
+#border-left {
     padding-left: 15px;
+    border-left: 1px solid gray;
+
 }
 
 .barky-knapp {
@@ -62,6 +67,10 @@ header {
     border-radius: 5px;
     padding: 7px 10px;
     display: inline-block;
+}
+
+.barky-knapp:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 a {
