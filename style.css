@@ -23,8 +23,8 @@ header {
     position: fixed;
     right: 0;
     left: 0;
-    margin: 0 10px;
     padding: 10px 0;
+    margin: 0 10px;
     border-bottom: 0.5px solid black;
     background-color: white;
     font-size: 13px;
@@ -34,16 +34,62 @@ header {
     width: 100px;
 }
 
-.menu-container {
+header nav {
     font-weight: 500;
-    gap: 10px;
+    align-items: center;
+
+}
+
+.menu-container {
+    position: relative;
+
+}
+
+.menu-item:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu {
+    position: absolute;
+    display: block;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+    left: 0;
+    box-shadow: 0 0 2px gray;
+    background: white;
+}
+
+.sub-menu img {
+    width: 30px;
+    background-color: white;
+    box-shadow: 0 0 1px gray;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.sub-menu-item {
     display: flex;
+    padding: 8px;
+    position: relative;
+    gap: 10px;
+    border-radius: 5px;
+}
+
+.sub-menu-item:hover {
+    background-color: #f4f4f4;
+}
+
+.sub-menu-item p {
+    margin: 0;
 }
 
 .menu-item {
     border-radius: 5px;
     padding: 8px;
+    display: inline-block;
 }
+
 
 .menu-item:hover {
     background-color: #f4f4f4;
@@ -53,12 +99,12 @@ header {
     margin-left: auto;
     align-items: center;
     gap: 15px;
+    display: flex;
 }
 
-#border-left {
-    padding-left: 15px;
-    border-left: 1px solid gray;
-
+#login-nav div {
+    border-right: 0.5px solid gray;
+    padding-right: 15px;
 }
 
 .barky-knapp {
