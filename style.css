@@ -135,6 +135,10 @@ p {
     line-height: 1.4;
 }
 
+section img {
+    width: 100%;
+}
+
 main {
     max-width: 1000px;
     margin: 0 auto;
@@ -182,4 +186,53 @@ article p {
 #logos img {
     width: 80px;
     object-fit: contain;
+}
+
+/* SECTION 3 */
+
+.medium-heading {
+    margin: 0;
+    font-size: 36px;
+    color: #121212;
+}
+
+.info-box {
+    max-width: 50%;
+}
+
+.big-image {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: 650;
+    color: #999999;
+    text-align: center;
+}
+
+.emoji {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.emoji img {
+    width: 50px;
+}
+
+.emoji div p {
+    margin: 0;
+}
+
+.name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.name-role {
+    font-size: 13px;
+    font-weight: 450;
+    color: #999;
 }
