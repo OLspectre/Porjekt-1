@@ -70,6 +70,7 @@ header nav {
 
 .sub-menu-item {
     display: flex;
+    align-items: center;
     padding: 8px;
     position: relative;
     gap: 10px;
@@ -107,12 +108,14 @@ header nav {
     padding-right: 15px;
 }
 
+/* ADDERA BOX-SHADOW*/
 .barky-knapp {
     background-color: black;
     color: white;
     border-radius: 5px;
     padding: 7px 10px;
     display: inline-block;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
 }
 
 .barky-knapp:hover {
@@ -141,6 +144,8 @@ main {
     gap: 30px;
 }
 
+/* SECTION 1 */
+
 #hero-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -160,4 +165,21 @@ article h1 {
 article p {
     font-size: 16px;
     color: #7F7F7F;
+}
+
+/* SECTION 2 */
+
+#logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    padding: 25px 20px;
+}
+
+#logos img {
+    width: 80px;
+    object-fit: contain;
 }
