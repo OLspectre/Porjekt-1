@@ -41,16 +41,18 @@ header nav {
 }
 
 .menu-container {
-    position: relative;
-
+    display: flex;
+    gap: 15px;
 }
 
 .menu-item:hover .sub-menu {
-    display: block;
+    display: flex;
+    align-items: start;
 }
 
 .sub-menu {
     position: absolute;
+    top: 100%;
     display: none;
     flex-direction: column;
     gap: 5px;
@@ -58,6 +60,8 @@ header nav {
     left: 0;
     box-shadow: 0 0 2px gray;
     background: white;
+    border-radius: 3px;
+
 }
 
 .sub-menu img {
@@ -72,9 +76,9 @@ header nav {
     display: flex;
     align-items: center;
     padding: 8px;
-    position: relative;
     gap: 10px;
     border-radius: 5px;
+    width: max-content;
 }
 
 .sub-menu-item:hover {
@@ -85,10 +89,24 @@ header nav {
     margin: 0;
 }
 
+#extra-link {
+    font-size: 12px;
+    padding: 8px;
+}
+
+#extra-link span {
+    text-decoration: underline;
+}
+
+#extra-link span:hover {
+    color: #087fe7;
+}
+
 .menu-item {
     border-radius: 5px;
     padding: 8px;
     display: inline-block;
+    position: relative;
 }
 
 
