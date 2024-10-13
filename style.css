@@ -14,6 +14,10 @@ body {
     font-family: Inter;
 }
 
+.info-section {
+    padding: 0px 0 50px 0;
+}
+
 /* HEADER - NAVBAR */
 
 header {
@@ -210,6 +214,7 @@ article p {
 
 .info-box {
     max-width: 50%;
+    margin-bottom: 35px;
 }
 
 .big-image {
@@ -252,25 +257,22 @@ article p {
 
 /* LIST SECTION */
 
-
-
 .plan-section {
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    padding: 100px 0;
-    border-top: 1px solid #999999;
-    border-bottom: 1px solid #999999;
+    padding: 90px 0;
+    border-top: 1px solid #f4f4f4;
+    border-bottom: 1px solid #f4f4f4;
 }
 
 .center {
-    margin: auto;
+    margin: auto auto 35px auto;
     text-align: center;
     max-width: 60%;
 }
 
 #list-plan {
-    max-width: 70%;
+    width: 70%;
     margin: auto;
 }
 
@@ -299,4 +301,65 @@ li img {
 
 ul :nth-child(10) {
     border-bottom-style: none;
+}
+
+/* FEATURES SECTION */
+
+.team-testimonial {
+    padding: 30px 0;
+}
+
+.has-features {
+    display: flex;
+}
+
+.features {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px 15px;
+}
+
+.features div {
+    display: flex;
+    align-items: center;
+}
+
+.features h3 {
+    margin: 0;
+}
+
+.features img {
+    width: 30px;
+}
+
+.features a {
+    text-decoration: underline;
+    font-weight: 450;
+}
+
+.features a:hover {
+    text-decoration: underline;
+    color: #087fe7;
+}
+
+#product {
+    border-left: 1px solid #f4f4f4;
+    border-right: 1px solid #f4f4f4;
+}
+
+
+@media (max-width: 1080px) {
+
+    .has-features {
+        flex-wrap: wrap;
+    }
+
+    .features {
+        max-width: 50%;
+    }
+
+
 }
