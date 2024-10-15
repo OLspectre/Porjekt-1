@@ -274,14 +274,14 @@ article p {
     margin: auto;
 }
 
-ul {
+#list-plan ul {
     background-color: #f4f4f4;
     border-radius: 5px;
     padding: 12.5px 25px;
     list-style: none;
 }
 
-li {
+#list-plan li {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #999999;
@@ -398,4 +398,72 @@ ul :nth-child(10) {
 
 .border-left {
     border-left: 1px solid #e5e5e5;
+}
+
+/* FOOTER NAV SECTION */
+
+footer {
+    border-top: 1px solid #e5e5e5;
+    margin: 0 10px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    display: flex;
+    margin: auto;
+    gap: 20px;
+    padding: 65px 0;
+}
+
+.footer-content p,
+.footer-content a {
+    font-size: 14px;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 25%;
+}
+
+.copyright-text {
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+.social-media {
+    width: 18px;
+}
+
+.nav-list-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    flex: 1;
+}
+
+.list-header {
+    font-weight: 650;
+    margin: 0;
+    color: #121212;
+}
+
+.nav-list ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: flex-start;
+    padding: 0;
+    gap: 10px;
+    margin: 0;
+}
+
+.foot-list-item {
+    color: #7F7F7F;
+    font-weight: 450;
+}
+
+.foot-list-item:hover {
+    text-decoration: underline;
 }
