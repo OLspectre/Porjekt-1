@@ -203,7 +203,7 @@ p {
 main {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 100px 20px 0 20px;
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
     gap: 45px;
@@ -223,7 +223,7 @@ main {
 }
 
 article h1 {
-    font-size: 53px;
+    font-size: 46px;
     margin: 0;
 }
 
@@ -513,4 +513,52 @@ footer {
 
 .foot-list-item:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 1080px) {
+
+    header {
+        position: static;
+    }
+
+    .none {
+        display: none;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    main {
+        padding-top: 0;
+        margin: 0 5%;
+    }
+
+    #hero-section {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #hero-section article {
+        flex-shrink: 1;
+    }
+
+    #hero-image {
+        order: -1;
+        width: 500px;
+        justify-self: center;
+        padding: 0;
+    }
+}
+
+@media (max-width: 601px) {
+
+    #barky-hidden {
+        display: none;
+    }
+
+    #hero-image {
+        width: 100%;
+    }
 }
