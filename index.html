@@ -12,17 +12,18 @@
     <header>
         <img class="brand" src="material/brand.svg" alt="brand icon">
 
-        <nav class="menu-container">
+        <nav class="menu-container none">
             <div class="menu-item">
-                <a href="#">Product <img src="material/link-icons/nav-caret.svg" alt=""></a>
+                <a href="#">Product</a>
+                <img src="material/link-icons/nav-caret.svg" alt="">
                 <!-- UNDERMENY 1 -->
                 <nav class="sub-menu">
                     <a href="#">
                         <div class="sub-menu-item">
                             <img src="material/link-icons/nav-icon-01.svg" alt="">
                             <div>
-                                <p>AI</p>
-                                <p>Integrated AI assistant</p>
+                                <p class="sub-heading">AI</p>
+                                <p class="heading-text">Integrated AI assistant</p>
                             </div>
                         </div>
                     </a>
@@ -30,8 +31,8 @@
                         <div class="sub-menu-item">
                             <img src="material/link-icons/nav-icon-02.svg" alt="">
                             <div>
-                                <p>Docs</p>
-                                <p>Simple & powerful</p>
+                                <p class="sub-heading">Docs</p>
+                                <p class="heading-text">Simple & powerful</p>
                             </div>
                         </div>
                     </a>
@@ -39,8 +40,8 @@
                         <div class="sub-menu-item">
                             <img src="material/link-icons/nav-icon-03.svg" alt="">
                             <div>
-                                <p>Wiki</p>
-                                <p>Centralize your knowledge</p>
+                                <p class="sub-heading">Wiki</p>
+                                <p class="heading-text">Centralize your knowledge</p>
                             </div>
                         </div>
                     </a>
@@ -48,8 +49,8 @@
                         <div class="sub-menu-item">
                             <img src="material/link-icons/nav-icon-04.svg" alt="">
                             <div>
-                                <p>Projects</p>
-                                <p>For every team or size</p>
+                                <p class="sub-heading">Projects</p>
+                                <p class="heading-text">For every team or size</p>
                             </div>
                         </div>
                     </a>
@@ -57,8 +58,8 @@
                         <div class="sub-menu-item">
                             <img src="material/link-icons/nav-icon-05.svg" alt="">
                             <div>
-                                <p>Calendar</p>
-                                <p>Time and work, together</p>
+                                <p class="sub-heading">Calendar</p>
+                                <p class="heading-text">Time and work, together</p>
                             </div>
                         </div>
                     </a>
@@ -66,8 +67,8 @@
                         <div class="sub-menu-item">
                             <img src="material/link-icons/nav-icon-06.svg" alt="">
                             <div>
-                                <p>Sites</p>
-                                <p>Publish anything, fast</p>
+                                <p class="sub-heading">Sites</p>
+                                <p class="heading-text">Publish anything, fast</p>
                             </div>
                         </div>
                     </a>
@@ -75,19 +76,19 @@
                         <div class="sub-menu-item">
                             <img src="material/link-icons/nav-icon-07.svg" alt="">
                             <div>
-                                <p>Templates</p>
-                                <p>Setups to get you started</p>
+                                <p class="sub-heading">Templates</p>
+                                <p class="heading-text">Setups to get you started</p>
                             </div>
                         </div>
                     </a>
                 </nav>
             </div>
-            <!-- GÖR INTERAKTIVA + HITTA LÖSNING -->
 
             <div class="menu-item">
-                <a href="#">Teams <img src="material/link-icons/nav-caret.svg" alt=""></a>
+                <a href="#">Teams</a>
+                <img src="material/link-icons/nav-caret.svg" alt="">
                 <!-- UNDERMENY 2 -->
-                <nav class="sub-menu">
+                <nav class="sub-menu right-space">
                     <a href="#">
                         <div class="sub-menu-item">
                             Product
@@ -126,9 +127,10 @@
                 </nav>
             </div>
             <div class="menu-item">
-                <a href="#">Individuals <img src="material/link-icons/nav-caret.svg" alt=""></a>
+                <a href="#">Individuals</a>
+                <img src="material/link-icons/nav-caret.svg" alt="">
                 <!-- UNDERMENY 3 -->
-                <nav class="sub-menu">
+                <nav class="sub-menu right-space">
                     <a href="#">
                         <div class="sub-menu-item">
                             Personal
@@ -152,9 +154,10 @@
                 </nav>
             </div>
             <div class="menu-item">
-                <a href="#">Download <img src="material/link-icons/nav-caret.svg" alt=""></a>
+                <a href="#">Download</a>
+                <img src="material/link-icons/nav-caret.svg" alt="">
                 <!-- UNDERMENY 3 -->
-                <nav class="sub-menu">
+                <nav class="sub-menu" id="download">
                     <a href="#">
                         <div class="sub-menu-item">
                             Barky
@@ -181,11 +184,13 @@
         </nav>
 
         <nav id="login-nav">
-            <div>
-                <a class="menu-item" href="#">Request a demo</a>
-            </div>
-            <a class="menu-item" id="login" href="#">Log in</a>
-            <a class="barky-knapp" href="#">Get Barky Free</a>
+            <a class="menu-item none" href="#">Request a demo</a>
+            <div class="none"></div>
+            <a class="menu-item none" id="login" href="#">Log in</a>
+            <a class="barky-knapp small-menu-item" href="#">Get Barky Free</a>
+
+            <img id="hamburger" class="small-menu menu-item" src="material/link-icons/hamburger.svg"
+                alt="hamburger-menu-icon">
         </nav>
     </header>
     <!--  MAIN CONTENT -->
@@ -219,7 +224,6 @@
             <img src="material/logos/company-logo-12.png" alt="Sponsor logos">
             <img src="material/logos/company-logo-13.png" alt="Sponsor logos">
         </section>
-
         <!-- SECTION 3 -->
         <section class="info-section">
             <article class="info-box">

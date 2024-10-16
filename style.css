@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+
+
+
+
+
+
 @font-face {
     font-family: 'Inter';
     src: url(material/Inter.ttf);
@@ -31,7 +37,7 @@ header {
     margin: 0 10px;
     border-bottom: 0.5px solid #e5e5e5;
     background-color: white;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .brand {
@@ -39,11 +45,11 @@ header {
 }
 
 header nav {
-    font-weight: 500;
     align-items: center;
 }
 
 .menu-container {
+    font-weight: 500;
     display: flex;
     gap: 15px;
 }
@@ -53,38 +59,60 @@ header nav {
     align-items: start;
 }
 
+/* SUB-MENU START */
 .sub-menu {
     position: absolute;
     top: 100%;
     display: none;
     flex-direction: column;
-    gap: 5px;
     padding: 5px;
     left: 0;
-    box-shadow: 0 0 2px gray;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     background: white;
     border-radius: 3px;
+}
+
+nav.right-space {
+    width: 140px;
+}
+
+#download {
+    width: 165px;
 }
 
 .sub-menu img {
     width: 30px;
     background-color: white;
-    box-shadow: 0 0 1px gray;
     padding: 5px;
+    border: 1px solid #e5e5e5;
     border-radius: 5px;
 }
 
 .sub-menu-item {
     display: flex;
     align-items: center;
-    padding: 8px;
+    padding: 6px;
     gap: 10px;
     border-radius: 5px;
     width: max-content;
 }
 
-.sub-menu-item:hover {
+.sub-menu a {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.sub-menu a:hover {
     background-color: #f4f4f4;
+}
+
+.sub-menu .sub-heading {
+    font-weight: 550;
+}
+
+.sub-menu .heading-text {
+    font-size: 13px;
+    color: #7F7F7F;
 }
 
 .sub-menu-item p {
@@ -93,8 +121,14 @@ header nav {
 
 #extra-link {
     font-size: 12px;
+    color: #7F7F7F;
     padding: 8px;
 }
+
+#extra-link:hover {
+    background-color: white;
+}
+
 
 #extra-link span {
     text-decoration: underline;
@@ -105,18 +139,21 @@ header nav {
 }
 
 .menu-item {
+
     border-radius: 5px;
     padding: 8px;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    gap: 6px;
     position: relative;
 }
-
 
 .menu-item:hover {
     background-color: #f4f4f4;
 }
 
 #login-nav {
+    font-weight: 500;
     margin-left: auto;
     align-items: center;
     gap: 15px;
@@ -124,11 +161,11 @@ header nav {
 }
 
 #login-nav div {
-    border-right: 0.5px solid gray;
-    padding-right: 15px;
+    width: 1px;
+    height: 15px;
+    background: #e5e5e5;
 }
 
-/* ADDERA BOX-SHADOW*/
 .barky-knapp {
     background-color: black;
     color: white;
@@ -142,10 +179,18 @@ header nav {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+#hamburger {
+    width: 35px;
+    display: none;
+    margin-right: 10px;
+}
+
 a {
     text-decoration: none;
     color: black;
 }
+
+
 
 /* MAIN CONTENT */
 
@@ -350,6 +395,7 @@ ul :nth-child(10) {
 }
 
 /* TESTIMONIALS */
+/* GÖR OM TILL FLEX ÖVRE DEL */
 
 .testimonial {
     display: grid;
