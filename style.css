@@ -193,8 +193,6 @@ a {
     color: black;
 }
 
-
-
 /* MAIN CONTENT */
 
 p {
@@ -518,6 +516,7 @@ footer {
 }
 
 /* MEDIA QUIERIES */
+/* TABLET */
 @media (max-width: 1081px) {
 
     header {
@@ -548,6 +547,11 @@ footer {
         width: 500px;
         justify-self: center;
         padding: 0;
+    }
+
+    .center {
+        margin: auto;
+        max-width: 65%;
     }
 
     .has-features {
@@ -582,7 +586,26 @@ footer {
     }
 }
 
+/* MELLAN */
+@media (max-width: 960px) {
+
+    #list-plan {
+        width: 100%;
+        margin: 0;
+    }
+
+    .center {
+        margin: 0;
+        align-self: center;
+    }
+}
+
+/* MOBIL */
 @media (max-width: 601px) {
+
+    header {
+        border-style: none;
+    }
 
     #barky-hidden {
         display: none;
@@ -590,5 +613,50 @@ footer {
 
     #hero-image {
         width: 100%;
+    }
+
+    .info-section {
+        align-items: center;
+    }
+
+    .quote {
+        font-size: 26px;
+    }
+
+    .info-box {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .info-box p {
+        font-size: 18px;
+    }
+
+    .center {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .has-features {
+        grid-template-columns: auto;
+    }
+
+    .features {
+        padding: 0;
+    }
+
+    .testimonial {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .testimonial,
+    #testimonial-info,
+    #badges {
+        padding: 0;
+    }
+
+    #has-stats {
+        grid-template-columns: auto;
     }
 }
