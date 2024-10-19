@@ -643,11 +643,17 @@ footer {
 @media (max-width: 600px) {
 
     header {
+        position: static;
         border-style: none;
     }
 
     #barky-hidden {
         display: none;
+    }
+
+    main {
+        padding: 0;
+
     }
 
     #hero-image {
